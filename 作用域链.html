@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>document</title>
+	<link rel="stylesheet" type="text/css" href="" />
+	<link rel="stylesheet" type="text/css" href="" />
+	<script type="text/javascript">
+		var color = "blue";
+		// alert(antherColor);
+		function changeColor(){
+			var antherColor = "red";
+			//alert(tempColor);
+			function swapColor(){
+				var tempColor = antherColor;
+				antherColor = color;
+				color = tempColor;
+				/*alert(tempColor);//red
+				alert(antherColor);//blue
+				alert(color);//red*/
+			}
+			swapColor();
+		}
+		changeColor();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

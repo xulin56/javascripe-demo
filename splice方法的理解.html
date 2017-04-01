@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>document</title>
+	<link rel="stylesheet" type="text/css" href="" />
+	<link rel="stylesheet" type="text/css" href="" />
+	<script type="text/javascript">
+		var arr = ['red','blue','yellow','black'];
+		// 删除：两个参数，要删除的第一项的位置和要删除的项数
+		arr.splice(0,2);
+		console.log(arr);//["yellow", "black"]
+		// 插入：三个参数，起始位置，0（要删除的项数），要插入的项数
+		var arr1 = ['苹果','梨子','桃子','香蕉'];
+		arr1.splice(1,0,'菠萝','橘子');
+		console.log(arr1);//["苹果", "菠萝", "橘子", "梨子", "桃子", "香蕉"]
+		//替换
+		var arr2 = ['鲫鱼','鲤鱼','鲢鱼'];
+		arr2.splice(1,2,"草鱼",'武昌鱼','鲶鱼');
+		console.log(arr2);//["鲫鱼", "草鱼", "武昌鱼", "鲶鱼"]
+	</script>
+</head>
+<body>
+
+</body>
+</html>

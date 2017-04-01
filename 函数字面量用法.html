@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>document</title>
+	<link rel="stylesheet" type="text/css" href="" />
+	<link rel="stylesheet" type="text/css" href="" />
+	<script type="text/javascript">
+	 	function displayInfor(args){
+	 		var output = "";
+	 		if(typeof args.name == "string"){
+	 			output += "name:" + args.name + "\n";
+	 		}
+	 		if(typeof args.age == "number"){
+	 			output += "age:" + args.age + "\n";
+	 		}
+	 		alert(output);
+	 	}
+	 	var fn1 = displayInfor({
+	 		name : "xulin",
+	 		age : 26
+	 	});
+	 	var fn2 = displayInfor({
+	 		name :"wangguan"
+	 	});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

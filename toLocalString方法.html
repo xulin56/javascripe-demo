@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>document</title>
+	<link rel="stylesheet" type="text/css" href="" />
+	<link rel="stylesheet" type="text/css" href="" />
+	<script type="text/javascript">
+		var person1 = {
+			toLocaleString : function(){
+				return "xulin";
+			},
+			toString : function(){
+				return "hexulin";
+			}
+		}
+		var person2 = {
+			toLocaleString : function(){
+				return "wangguan";
+			},
+			toString : function(){
+				return "maomao";
+			}
+		}
+		var people = [person1,person2];
+		console.log(people);
+		console.log(people.toString());
+		var arr = [];
+		var str = people.toLocaleString();
+		var arr2 = arr.push(str);
+		console.log(arr2);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
