@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>document</title>
+	<link rel="stylesheet" type="text/css" href="" />
+	<link rel="stylesheet" type="text/css" href="" />
+	<script type="text/javascript">
+	function add(){
+		var num = 0;
+		// arguments.push(1);//报错
+		var arr = Array.prototype.slice.call(arguments);
+		arr.push(2);
+		for(var i=0;i<arr.length;i++){
+			num += arr[i];
+		}
+		return num;
+	}
+	console.log(add(1,2));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

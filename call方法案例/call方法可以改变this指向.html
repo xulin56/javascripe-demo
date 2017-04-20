@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>document</title>
+	<link rel="stylesheet" type="text/css" href="" />
+	<link rel="stylesheet" type="text/css" href="" />
+	<script type="text/javascript">
+
+	</script>
+</head>
+<body>
+<input type="text" value="xulin" id="username" />
+</body>
+</html>
+<script type="text/javascript">
+	function fn(){
+		console.log(this);
+		console.log(this.value);
+	}
+	window.fn();//window undefined
+	fn.call(document.getElementById("username"));//input xulin
+
+</script>

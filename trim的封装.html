@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>document</title>
+	<link rel="stylesheet" type="text/css" href="" />
+	<link rel="stylesheet" type="text/css" href="" />
+	<script type="text/javascript">
+		 var $$ = function() {};
+		 $$.prototype.$id = function (str){
+		 	return document.getElementById(str);
+		 }
+		  //删除左边的空格
+		$$.prototype.ltrim=function(str) {
+		        /*^ 以xx开头*/
+		        /*\s 表示空格*/
+		        /**表示匹配零个或者多个*/
+		        /*g 表示匹配全部*/
+		        /*(^\s*)表示匹配以空格开头一个或者多个字符*/
+		        /*str.replace(/(^\s*)/g,'') 表示用''替换所有的空格*/
+		        return str.replace(/(^\s*)/g,'');
+		    };
+		    //删除右边的空格
+		$$.prototype.rtrim=function(str) {
+		        /*$以xx结尾*/
+		        return str.replace(/(\s*$)/g,'');
+		    };
+		    //删除左右两端的空格
+		$$.prototype.trim=function(str) {
+		        /*/表是或的意思*/
+		        return str.replace(/(^\s*)|(\s*$)/g, '');
+		    };
+	</script>
+</head>
+<body>
+	用户名： <input type="text" id="txt">
+	<input type="button" id="btn" value="登陆">
+</body>
+<script type="text/javascript">
+		 var $$ = function() {};
+		 $$.prototype.$id = function (str){
+		 	return document.getElementById(str);
+		 }
+		  //删除左边的空格
+		$$.prototype.ltrim=function(str) {
+		        /*^ 以xx开头*/
+		        /*\s 表示空格*/
+		        /**表示匹配零个或者多个*/
+		        /*g 表示匹配全部*/
+		        /*(^\s*)表示匹配以空格开头一个或者多个字符*/
+		        /*str.replace(/(^\s*)/g,'') 表示用''替换所有的空格*/
+		        return str.replace(/(^\s*)/g,'');
+		    };
+		    //删除右边的空格
+		$$.prototype.rtrim=function(str) {
+		        /*$以xx结尾*/
+		        return str.replace(/(\s*$)/g,'');
+		    };
+		    //删除左右两端的空格
+		$$.prototype.trim=function(str) {
+		        /*/表是或的意思*/
+		        return str.replace(/(^\s*)|(\s*$)/g, '');
+		    };
+		    $$ = new $$();
+		    
+		    var btn = $$.$id("btn");
+		    btn.onclick = function(){
+		    	var username = $$.$id("txt").value;
+		    	var tr = $$.trim(username);
+		    	console.log(tr);
+		    }
+	</script>
+</html>

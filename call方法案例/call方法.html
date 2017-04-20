@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>document</title>
+	<link rel="stylesheet" type="text/css" href="" />
+	<link rel="stylesheet" type="text/css" href="" />
+	<script type="text/javascript">
+		var myClass = {
+			personNum : function(){
+				return 35;
+			}
+		};
+		var grup = {
+			captain : function(){
+				return {
+					name : "莉莉",
+					age : 26
+				}
+			}
+		} 
+		console.log(myClass.personNum());
+		console.log(myClass.personNum.call(grup));
+		console.log(grup.captain());
+	</script>
+</head>
+<body>
+
+</body>
+</html>

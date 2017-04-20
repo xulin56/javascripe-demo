@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>document</title>
+	<link rel="stylesheet" type="text/css" href="" />
+	<link rel="stylesheet" type="text/css" href="" />
+	<script type="text/javascript">
+	function Base(){
+		this.age = 21;
+		this.name = "hexulin"
+		this.sex = "nan";
+	}
+	Base.prototype = {
+		binddom : function(){
+
+		},
+		create : function(){
+
+		}
+	}
+	function Box(name,color ){
+		Base.call(this,arguments);
+		this.name = name
+		this.age = 29
+		this.color = color
+		this.init()
+	}
+	Box.prototype = new Base();
+	Box.prototype.bindomdetail = function(){
+		console.log(this.color);
+	}
+	Box.prototype.init = function(){
+		this.bindomdetail();
+	}
+	
+	var p1 = new Box("xulin","黄色");
+	console.log(p1.name);
+	console.log(p1.sex);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

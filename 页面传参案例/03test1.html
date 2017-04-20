@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h2>测试页面</h2>
+</body>
+</html>
+<script>
+    var params= window.location.search;//params:?id,date
+    console.log(params);
+    console.log(params.substring(1))
+    var arr = params.substring(1).split(",");
+    var id = arr[0];
+    console.log(id)
+
+
+</script>
